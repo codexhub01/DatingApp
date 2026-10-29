@@ -1,9 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NgFor } from '@angular/common';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NgFor],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
@@ -17,6 +18,7 @@ export class App implements OnInit {
 
 
   ngOnInit() {
+    
     this.getUsers();
   }
 
