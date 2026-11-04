@@ -2,9 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgFor } from '@angular/common';
+import { Nav } from './nav/nav';
 
 @Component({
-  imports: [RouterOutlet, NgFor],
+  imports: [RouterOutlet, NgFor, Nav],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
