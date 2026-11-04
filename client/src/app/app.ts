@@ -3,9 +3,10 @@ import { Component, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgFor } from '@angular/common';
 import { Nav } from './nav/nav';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  imports: [RouterOutlet, NgFor, Nav],
+  imports: [RouterOutlet, NgFor, Nav , FormsModule],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

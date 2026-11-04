@@ -26,13 +26,18 @@
 
       </ul>
 
-      <form class="d-flex gap-2" role="search">
+      <form #loginform="ngForm" class="d-flex gap-2" (ngSubmit)="login()" autocomplete="off">
         <input
+          name="UserName"
           class="form-control"
           type="text"
-          placeholder="UserName">
+          placeholder="UserName"
+          [(ngModel)]="model.UserName"
+          >
 
           <input
+          name="password"
+          [(ngModel)]="model.password"
           class="form-control"
           type="password"
           placeholder="Password">

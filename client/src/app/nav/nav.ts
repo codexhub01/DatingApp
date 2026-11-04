@@ -1,9 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  imports: [],
+  imports: [FormsModule],
   selector: 'app-nav',
   styleUrl: './nav.css',
   templateUrl: './nav.html',
 })
-export class Nav {}
+export class Nav implements OnInit {
+
+  model : any = {}
+  constructor()
+  {
+
+  }
+
+  ngOnInit(): void {
+    
+  }
+
+  login()
+  {
+    console.log(this.model);
+  }
+}
